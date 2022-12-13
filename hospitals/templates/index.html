@@ -1,13 +1,17 @@
-{% extends 'navigation.html' %}
-{% load static %}
-{% block body %}
+{% extends 'navigation.html' %} {% load static %} {% block body %}
 
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oxygen:wght@300;400;700&family=Poppins:wght@400;700&family=Roboto:ital,wght@1,900&display=swap"
+    rel="stylesheet"
+  />
   <style media="screen">
     .jumbotron {
-      width : 100;
-      height : 550px;
-      background-image: url('{% static "images/H3.jpg" %}');
+      width: 100%;
+      height: 1000px;
+      background-image: url('{% static "images/h11.jpg" %}');
       background-size: cover;
       background-repeat: no-repeat;
     }
@@ -17,37 +21,35 @@
       text-align: center;
     }
 
-
     .alert {
       margin: 0px;
     }
 
-    .glow {
-      font-size: 50px;
-      color: black;
-      margin-right : 5px;
-      text-align: center;
-      -webkit-animation: glow 1s ease-in-out infinite alternate;
-      -moz-animation: glow 1s ease-in-out infinite alternate;
-      animation: glow 1s ease-in-out infinite alternate;
+    .main-title-home {
+      font-family: "Roboto", sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      color: rgb(166, 220, 249);
     }
 
     @-webkit-keyframes glow {
       from {
-        text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
+        text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000,
+          0 0 40px #000000, 0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
       }
       to {
-        text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+          0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
       }
     }
   </style>
 </head>
-<br>
-<br>
 
-<div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
-  <br><br>
-  <h5 class="display-3">"The greatest gift you can give your family and the world is a healthy you"</h5>
-  <br><br><br><br>
+<div class="jumbotron" style="margin-bottom: 0px; margin-top: 0px">
+  <br /><br /><br>
+  <h5 class="display-3 main-title-home">
+    "The greatest gift you can give your family and the world is a healthy you"
+  </h5>
+  <br /><br /><br /><br />
 </div>
 {% endblock%}
