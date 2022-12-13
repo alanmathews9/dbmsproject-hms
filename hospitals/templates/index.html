@@ -29,9 +29,12 @@
       font-family: "Roboto", sans-serif;
       font-weight: 900;
       font-style: italic;
-      color: rgb(166, 220, 249);
+      color: rgb(32, 4, 157);
     }
 
+    .shadows {
+      box-shadow: 10px 10px 6px rgb(1, 43, 63);
+    }
     @-webkit-keyframes glow {
       from {
         text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000,
@@ -46,10 +49,16 @@
 </head>
 
 <div class="jumbotron" style="margin-bottom: 0px; margin-top: 0px">
-  <br /><br /><br>
-  <h5 class="display-3 main-title-home">
-    "The greatest gift you can give your family and the world is a healthy you"
-  </h5>
+  <br /><br /><br />
+  <div class="card bg-light mb-3 shadows">
+    <div class="card-body">
+      <h5 class="display-3 main-title-home">
+        "The greatest gift you can give your family and the world is a healthy
+        you"
+      </h5>
+    </div>
+  </div>
+
   <br /><br /><br /><br />
 </div>
 {% endblock%}
